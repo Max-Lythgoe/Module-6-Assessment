@@ -5,7 +5,7 @@ describe('shuffleArray should return an array', () => {
     //     const myArray = [1, 2, 3, 4];
     //     expect(typeof shuffleArray(myArray)).toBe('array')
     // }) 
-    
+
     test('shuffle array should be same array length', () => { 
         const myArray = [1, 2, 3, 4];
         expect(shuffleArray(myArray).length).toEqual(4)
@@ -15,6 +15,11 @@ describe('shuffleArray should return an array', () => {
     //     const myArray = [1, 2, 3, 4];
     //     expect(shuffleArray(myArray)).toBeTruthy(myArray)
     // })
+    test('shuffleArray should return an array', () => {
+        const myArray = [1, 2, 3, 4, 5]
+        let result = shuffleArray(myArray)
+        expect(result).toHaveProperty('length')
+    })
 })
 
 
